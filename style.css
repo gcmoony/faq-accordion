@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5em;
+  background-color: hsl(275, 100%, 97%);
+  background-image: url('./assets/images/background-pattern-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card > header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-weight: 700;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 375px) {
+  body {
+    
+  }
+  .card {
+    margin: auto 1.5em;
+  }
+}
+
+@media (min-width: 800px) {
+  .card {
+    max-width: 50ch;
+  }
+
+  body {
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 1em 0 1em;
+  font-size: 16px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: .5em;
+  color: hsl(292, 42%, 14%);
+  box-shadow: #777 0px 50px 100px -20px;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.section {
+  padding-top: 1em;
+}
+
+.section:not(:last-child) {
+  border-bottom: 1px solid hsl(0, 0%, 95%);
+  
+}
+
+.section > .hidden {
+  max-height: 0;
+  transition: max-height .5s;
+  overflow: hidden;
+  font-weight: 400;
+  color: hsl(292, 16%, 49%);
+}
+
+.section > .hidden.expand { 
+  max-height: 50ch;
+  transition: max-height .5s;
+  padding-bottom: 1em;
+  
+}
+
+.section label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  padding-bottom: 1em;  
+  gap: 2em;
+  transition: color .2s;
+}
+
+.section label:hover {
+  color: #AD28EB;
+  cursor: pointer;
+  transition: color .2s;
+}
+
+.section label:focus {
+  outline: none;
+  color: #AD28EB;
+}
+
+.expand-icon {
+  aspect-ratio: 1 / 1;
+  background-image: url("./assets/images/icon-plus.svg");
+  background-position: 50%;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  
+}
