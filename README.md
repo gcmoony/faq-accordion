@@ -3,7 +3,7 @@
 
 This is my solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). 
 
-![FAQ Accordion Final](https://res.cloudinary.com/dz209s6jk/image/upload/v1593198709/Challenges/xjpdhdjod58zbaaw0fmo.jpg)
+![FAQ Accordion Final](https://github.com/gcmoony/faq-accordion/blob/main/design/desktop-design.jpg?raw=truev)
 
 <sub>A snippet of the final product of the FAQ accordion challenge.</sub>
 
