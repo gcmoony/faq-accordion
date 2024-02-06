@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css"/>
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {padding: 5em; font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <header>
+      <img alt="" src="./assets/images/icon-star.svg"/>
+      <h1>FAQs</h1>
+    </header>
+    
+    <div class="section">
+      <div>
+        <label tabindex="1" class="inline-block" for="q1"><span>What is Frontend Mentor, and how will it help me?</span><div class="expand-icon"></div></label>
+        <input class="inline-block" id="q1" type="checkbox">
+      </div>
+      <p class="hidden">
+        Frontend Mentor offers realistic coding challenges to help developers improve their 
+        frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+        all levels and ideal for portfolio building.
+      </p>
+    </div>
+
+    <div class="section">
+      <div>
+        <label class="inline-block"  tabindex="2" for="q2"><span>Is Frontend Mentor free?</span><div class="expand-icon"></div></label>
+        <input class="inline-block" id="q2" type="checkbox">
+      </div>
+      <p class="hidden">
+        Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+        option providing access to a range of projects suitable for all skill levels.
+      </p>
+    </div>
+
+    <div class="section">
+      <div>
+        <label class="inline-block"  tabindex="3" for="q3"><span>Can I use Frontend Mentor projects in my portfolio?</span><div class="expand-icon"></div></label>
+        <input class="inline-block" id="q3" type="checkbox">
+      </div>
+      <p class="hidden">
+        Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+        way to showcase your skills to potential employers!
+      </p>
+    </div>
+
+    <div class="section">
+      <div>
+        <label class="inline-block"  tabindex="4" for="q4"><span>How can I get help if I'm stuck on a Frontend Mentor challenge?</span><div class="expand-icon"></div></label>
+        <input class="inline-block" id="q4" type="checkbox">
+      </div>
+      <p class="hidden">
+        The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+      channel where you can ask questions and seek support from other community members.
+      </p>
+    </div>
+
+  </div>
+  
+
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/gcmoony">George Cadel-Munoz</a>.
+  </footer>
+</body>
+</html>
